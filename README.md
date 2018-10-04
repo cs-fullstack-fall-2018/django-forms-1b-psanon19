@@ -10,4 +10,6 @@ Clone this starter code:
 
 4. Modify the ```views.form_name_view``` to print a message in the console when the form is submitted that says ```Favorite Website Entered Was: whatever.url.was.entered.com```
 
+BONUS Add code to your view to validate that the user entered at least 3 words into the text field, and if not, raise a validation exception.
+
 
