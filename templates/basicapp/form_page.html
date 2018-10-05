@@ -8,10 +8,11 @@
 </head>
 <body>
 
-<h2>Fill out this form:</h2>
-<div class="container">
+<h2 align="center">Fill out this form:</h2>
+<div class="container" align="center">
     <form method="POST">
-		# Is everything secure?
+		<!--# Is everything secure?-->
+        {% csrf_token %}
         {{ form.as_p }}
         <input type="submit" class="btn btn-primary" value="Submit">
     </form>

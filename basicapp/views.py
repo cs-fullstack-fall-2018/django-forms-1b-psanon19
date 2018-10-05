@@ -13,6 +13,7 @@ def form_name_view(request):
         form = forms.FormName(request.POST)
         if form.is_valid():
             # Do something
+            print("Favorite Website Entered Was: "+form.cleaned_data['url'])
             print("VALIDATION SUCCESSFUL")
             
     return render(request, 'basicapp/form_page.html', {'form': form})
