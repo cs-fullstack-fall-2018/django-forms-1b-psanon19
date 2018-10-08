@@ -20,5 +20,6 @@ from basicapp import views
 urlpatterns = [
     path('', views.index, name='index'),
     path('admin/', admin.site.urls),
-    path('formpage/', views.form_name_view, name='form_name')
+    path('formpage/', views.form_name_view, name='form_name'),
+    # path('new_form_page/',views.new_form_page, name='form_url')
 ]
